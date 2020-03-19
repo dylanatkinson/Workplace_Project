@@ -1,0 +1,32 @@
+.top_slider {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    height: 90vh;
+    transition: 1s ease-in;
+}
+
+.slide_btn {
+    position: absolute;
+    width: 5%;
+    height: 90%;
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+}
+
+#go_left {
+    left: 0;
+}
+
+#go_right {
+    right: 0;
+}
