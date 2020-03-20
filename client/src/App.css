@@ -145,6 +145,7 @@ footer ul {
 
 .clearance_banner-top {
     font-size: 52px;
+    font-weight: 300;
     font-family: 'Oxygen', sans-serif;
     text-align: center;
     margin: 4vh;
@@ -158,8 +159,8 @@ footer ul {
 }
 
 .clearance_disclaimer {
-    font-size: 10px;
-    margin-top: 3vh;
+    font-size: 12px;
+    margin: 2vh;
 }
 
 .clearance_emphasis {
@@ -175,11 +176,32 @@ footer ul {
     width: 50%;
     border: 1px solid white;
     margin: 3vh 2vw;
-    padding: 1vh 1vw;
+    padding: 2vh 1vw;
+    position: relative;
+}
+
+.clearance_description-subhead {
+    background: #d30f16;
+    position: absolute;
+    top: -12px;
+    left: 20%;
+    padding: 0 1vw;
 }
 
 .clearance_description-sub {
     width: 50%;
     text-align: center;
     padding: 1vh 1vw;
+}
+
+.product_descriptor-box {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 1vw 2vh;
+}
+
+.product_item-box {
+    padding: 1vw 1vh;
 }

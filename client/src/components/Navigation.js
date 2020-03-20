@@ -5,6 +5,7 @@ import SofologyLogo from './images/Sofology-Logo-Standard.png';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
+import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = (props) => {
     return (
@@ -17,7 +18,7 @@ const Navigation = (props) => {
                 <li><input type="text" placeholder="Find the sofa you love..." /><Link to="/browser"><button className="search_icon"><FontAwesomeIcon icon={faSearch} /></button></Link></li>
                 <li><Link to="/stores">Find a Store</Link></li>
                 <li><Link to="/responsibility">Responsibility</Link></li>
-                <li>More</li>
+                <li>More <FontAwesomeIcon icon={faChevronDown} style={{fontSize: "0.7rem"}} /></li>
                 <li><Link to="/order-now"><button className="order_btn">Call to Order</button></Link></li>
                 <li><Link to="/clearance"><button className="clearance_btn">Clearance</button></Link></li>
             </ul>
@@ -29,14 +30,6 @@ const Navigation = (props) => {
                 <Link to="/browser"><button>Chairs</button></Link>
                 <Link to="/browser"><button>Sofa Beds</button></Link>
                 <Link to="/sofasizer"><button>Sofasizer</button></Link>
-            </div>
-            <div className="promo_banner">
-                <ul>
-                    <li>Guaranteed for 20 Years</li>
-                    <li>Exclusive Sofa Designs</li>
-                    <li>Interest Free 0% APR (min. spend £500)</li>
-                    <li>Always 100% Leather</li>
-                </ul>
             </div>
         </nav>
     );
