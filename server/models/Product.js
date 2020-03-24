@@ -19,12 +19,11 @@ const ProductSchema = new Schema({
         type: String,
         required: true
     },
-    colour:
-        [
-            {
-                type: String
-            }
-        ],
+    colour: [
+        {
+            type: String
+        }
+    ],
     price: {
         type: Number,
         required: true
