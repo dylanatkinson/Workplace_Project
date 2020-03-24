@@ -6,6 +6,7 @@ import SofologyLogo from './images/Sofology-Logo-Standard.png';
 import MoreMenu from './MoreMenu';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
 import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
@@ -15,7 +16,7 @@ const Navigation = (props) => {
     return (
         <nav>
             <div className="top_nav">
-                My Favourites | <Link to="/basket"> Basket {props.items === 0 ? "" : props.items} </Link> | Log in
+    My Favourites | <Link to="/basket"><FontAwesomeIcon icon={faShoppingBasket} /> Basket {props.items === 0 ? "" : <span className="basket_number">{props.items}</span>} </Link> | Log in
             </div>
             <ul>
                 <Link to="/"><img src={SofologyLogo} alt="Sofology Logo" style={{margin: "1vw 0 1vw 0"}} /></Link>

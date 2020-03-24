@@ -249,3 +249,34 @@ footer ul {
     color: #00adef;
     font-weight: 600;
 }
+
+.what_is-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 2rem;
+}
+
+#what_is-specialist {
+    width: 100%;
+}
+
+.what_is-subtext {
+    width: 40%;
+    margin: 3vh 0;
+}
+
+.what_is-subtext h1 {
+    margin: 0 0 2vh 0;
+}
+
+.basket_number {
+    color: #00adef;
+    font-weight: 800;
+    margin: 5px;
+}
+
+.product_range-name {
+    text-transform: capitalize;
+}

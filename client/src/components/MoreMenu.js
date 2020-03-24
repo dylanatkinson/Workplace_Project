@@ -5,7 +5,7 @@ const MoreMenu = () => {
     return (
         <ul className="more_menu">
             <li><Link to="/order-now">Contact Us</Link></li>
-            <li>What is Sofology?</li>
+            <li><Link to="/what-is-sofology">What is Sofology?</Link></li>
             <li>Delivery</li>
             <li>Payment Options</li>
             <li>Sofashield</li>

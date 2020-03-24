@@ -11,6 +11,7 @@ import Responsibility from './components/pages/Responsibility';
 import OrderNow from './components/pages/OrderNow';
 import Clearance from './components/pages/Clearance';
 import Sofasizer from './components/pages/Sofasizer';
+import WhatIsSofology from './components/pages/WhatIsSofology';
 
 import './App.css';
 
@@ -32,6 +33,7 @@ const App = () => {
           <Route path="/stores" component={Stores} />
           <Route path="/responsibility" component={Responsibility} />
           <Route path="/order-now" component={OrderNow} />
+          <Route path="/what-is-sofology" component={WhatIsSofology} />
           <Route path="/clearance" component={Clearance} />
           <Route path="/sofasizer" component={Sofasizer} />
         </Switch>
