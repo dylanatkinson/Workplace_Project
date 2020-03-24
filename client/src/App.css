@@ -8,6 +8,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+a {
+    text-decoration: none;
+}
+
 nav {
     background: black;
     color: white;
@@ -28,6 +32,7 @@ nav input {
     display: flex;
     justify-content: flex-end;
     background: #3f3f3f;
+    font-size: 0.8rem;
     padding: 1vh 2vw;
 }
 
@@ -39,9 +44,8 @@ nav input {
 nav ul {
     display: flex;
     list-style-type: none;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    margin: 2vh 2vw;
 }
 
 .search_icon {
@@ -204,4 +208,44 @@ footer ul {
 
 .product_item-box {
     padding: 1vw 1vh;
+}
+
+.menu_hover-top {
+    position: absolute;
+    margin: 28px 0;
+    z-index: 1;
+    width: 15vw;
+}
+
+.more_menu {
+    display: block;
+    line-height: 3rem;
+    background: #00adef;
+    padding: 1rem;
+}
+
+.slider_overlay-text {
+    position: absolute;
+    z-index: 1;
+}
+
+.order_now-advice {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 2vh 2vw;
+}
+
+.order_now-head {
+    text-align: center;
+    margin: 1rem 0 3rem;
+}
+
+.order_now-subhead {
+    width: 25%;
+}
+
+.order_call-emphasis {
+    color: #00adef;
+    font-weight: 600;
 }

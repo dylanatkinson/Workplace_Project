@@ -13,8 +13,8 @@ import { faChevronRight } from '@fortawesome/free-solid-svg-icons';
 const ImageCarousel = () => {
 
     let slides = [
-        <SlideImage src={HallieBanner} alt="Shop the new Hallie" text="Perfectly Pastel" />,
-        <SlideImage src={MimiBanner} alt="Shop the new Mimi" text="Exclusive Leather Designs" />
+        <SlideImage src={HallieBanner} alt="Shop the new Hallie" header="Perfectly Pastel" text="Pastels for spring? Breathe new life into your home with this season's hottest new fabric sofa styles. Try a pop of pink or a soft minty hue to brighten any room." name="Hallie" material="Fabric" />,
+        <SlideImage src={MimiBanner} alt="Shop the new Mimi" header="Exclusive Leather Designs" text="Colour isn't just for fabric. Discover our leather styles in every shade from soft and subtle neutrals to bright, bold statement sofas." name="Mimi" material="Leather" />
     ];
 
     // react hook
@@ -25,15 +25,15 @@ const ImageCarousel = () => {
     };
 
     const goRight = () => {
-        x === -100 * (slides.length -1) ? setX(0) : setX(x - 100);
-    };
+        x === -100 * (slides.length - 1) ? setX(0) : setX(x - 100);
+    };   
 
     return (
         <div className="top_slider">
             {
                 slides.map((image, index) => {
                     return (
-                        <div key={index} className="slide" style={{transform: `translateX(${x}%)`}}>
+                        <div key={index} className="slide" style={{ transform: `translateX(${x}%)` }}>
                             {image}
                         </div>
                     )
@@ -41,7 +41,7 @@ const ImageCarousel = () => {
             }
             <button className="slide_btn" id="go_left" onClick={goLeft}><FontAwesomeIcon icon={faChevronLeft} /></button>
             <button className="slide_btn" id="go_right" onClick={goRight}><FontAwesomeIcon icon={faChevronRight} /></button>
-        </div> 
+        </div>
     );
 };
 
