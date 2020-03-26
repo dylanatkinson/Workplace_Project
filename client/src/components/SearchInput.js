@@ -6,14 +6,25 @@ import {FontAwesomeIcon} from '@fortawesome/react-fontawesome';
 import {faSearch} from '@fortawesome/free-solid-svg-icons';
 
 class SearchInput extends Component {
-    constructor (props) {
-        super(props);
+    constructor() {
+        super();
+
+        this.state = {
+            search: ""
+        };
     };
 
+    handleSearch = (e) => {
+        this.setState({
+            search: e.target.value
+        });
+    };
+    
     render() {
+        
         return (
             <div>
-                <input type="text" placeholder="Find the sofa you love..." /><Link to="/browser"><button className="search_icon"><FontAwesomeIcon icon={faSearch} /></button></Link>
+                <input type="text" value={this.state.search} onChange={this.handleSearch} placeholder="Find the sofa you love..." /><Link to="/browser"><button className="search_icon"><FontAwesomeIcon icon={faSearch} /></button></Link>
             </div>
         );
     };
