@@ -292,3 +292,48 @@ footer ul {
 .product_icon-palette {
     color: #3f3f3f;
 }
+
+.login_modal-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    max-width: 25vw;
+    height: auto;
+    background: black;
+    color: white;
+    padding: 2vh;
+}
+
+.login_modal-nav input, .login_modal-button {
+    margin: 1vh;
+    width: 100%;
+}
+
+.login_modal-button {
+    background: #00adef;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    height: 2rem;
+    font-weight: 600;
+}
+
+.login_modal-exit {
+    background: none;
+    border: none;
+    color: white;
+}
+
+.login_modal-form {
+    padding: 1vh;
+}
+
+.top_nav-button {
+    background: none;
+    border: none;
+    color: white;
+}
