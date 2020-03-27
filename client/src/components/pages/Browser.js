@@ -4,11 +4,10 @@ import GetProducts from '../GetProducts';
 
 const Browser = (props) => {
     return (
-        <div>
+        <div className="browser_container">
             <SubNavigation />
-            <h1>Placeholder</h1>
-            <GetProducts />
-            <button onClick={props.addToBasket}>Add to Basket</button>
+            <GetProducts addToBasket={props.addToBasket} />
+            {/* <button onClick={props.addToBasket}>Add to Basket</button> */}
         </div>
     );
 };

@@ -202,11 +202,15 @@ footer ul {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-evenly;
     padding: 1vw 2vh;
 }
 
 .product_item-box {
+    width: 20%;
+    box-shadow: 0 1px 1px 0 rgba(0,0,0,.25);
+    background: white;
+    margin: 1vw 1vh;
     padding: 1vw 1vh;
 }
 
@@ -279,4 +283,12 @@ footer ul {
 
 .product_range-name {
     text-transform: capitalize;
+}
+
+.browser_container {
+    background: #f7f7f7;
+}
+
+.product_icon-palette {
+    color: #3f3f3f;
 }

@@ -25,15 +25,18 @@ class GetProducts extends Component {
 
     productsList = () => {
         return this.state.products.map(product => {
-            return <Product product={product} />
+            return <Product key={product._id} product={product} addToBasket={this.props.addToBasket} />
         });
     };
 
     render() {
         return (
-            <div className="product_descriptor-box">
-            { this.productsList() }
-            </div>
+            <>
+                <h5>{this.state.products.length} results</h5>
+                <div className="product_descriptor-box">
+                    {this.productsList()}
+                </div>
+            </>
         );
     };
 };
