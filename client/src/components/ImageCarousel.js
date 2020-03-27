@@ -17,7 +17,6 @@ const ImageCarousel = () => {
         <SlideImage src={MimiBanner} alt="Shop the new Mimi" header="Exclusive Leather Designs" text="Colour isn't just for fabric. Discover our leather styles in every shade from soft and subtle neutrals to bright, bold statement sofas." name="Mimi" material="Leather" />
     ];
 
-    // react hook
     let [x, setX] = useState(0);
 
     const goLeft = () => {

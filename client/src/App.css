@@ -337,3 +337,18 @@ footer ul {
     border: none;
     color: white;
 }
+
+.shop_sofas-slideable {
+    display: flex;
+    justify-content: space-between;
+    margin: 5vh;
+    text-align: center;
+    overflow-x: scroll;
+    font-weight: 200;
+}
+
+.shop_sofas-header {
+    margin-top: 3vh;
+    text-align: center;
+    font-weight: 200;
+}

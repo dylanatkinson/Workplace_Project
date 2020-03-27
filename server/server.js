@@ -6,6 +6,7 @@ const cors = require('cors');
 const products = require('./routes/api/products');
 const users = require('./routes/api/users');
 const clearance = require('./routes/api/clearance');
+const stores = require('./routes/api/stores');
 
 const app = express();
 
@@ -23,5 +24,6 @@ mongoose.connect(`mongodb+srv://dylantest:${process.env.PASSWORD}@mern-shoppping
 app.use('/api/products', products);
 app.use('/api/users', users);
 app.use('/api/clearance', clearance);
+app.use('/api/stores', stores);
 
 app.listen(5000, () => console.log("Server started on port 5000"));

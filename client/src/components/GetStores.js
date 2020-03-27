@@ -1,43 +1,44 @@
 import React, { Component } from 'react';
 import axios from 'axios';
-import ClearanceItem from './ClearanceItem';
+import StoresItem from './StoresItem';
 
-class GetClearance extends Component {
+class GetStores extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            clearance: []
+            stores: []
         }
     };
 
     componentDidMount() {
-        axios.get('http://localhost:5000/api/clearance')
+        axios.get('http://localhost:5000/api/stores')
             .then(res => {
                 this.setState({
-                    clearance: res.data
+                    stores: res.data
                 });
+                console.log(res.data)
             })
             .catch(err => {
                 console.log(err);
             })
     };
 
-    clearanceList = () => {
-        return this.state.clearance.map(clearance => {
-            return <ClearanceItem clearance={clearance} />
+    storesList = () => {
+        return this.state.stores.map(store => {
+            return <StoresItem store={store} />
         });
     };
 
     render() {
         return (
             <>
-            <h5>{this.state.clearance.length} results</h5>
+            <h5>{this.state.stores.length} results</h5>
             <div className="product_descriptor-box">
-                {this.clearanceList()}
+                {this.storesList()}
             </div>
             </>
         );
     };
 };
 
-export default GetClearance;
+export default GetStores;

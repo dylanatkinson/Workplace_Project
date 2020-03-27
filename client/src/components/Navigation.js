@@ -39,11 +39,13 @@ const Navigation = (props) => {
                 <li><input type="text" placeholder="Find the sofa you love..." /><Link to="/browser"><button className="search_icon"><FontAwesomeIcon icon={faSearch} /></button></Link></li>
                 <li><Link to="/stores">Find a Store</Link></li>
                 <li><Link to="/responsibility">Responsibility</Link></li>
+
                 <li onMouseEnter={() => setMenu(true)}>
                     <span>More <FontAwesomeIcon icon={faChevronDown} style={{ fontSize: "0.7rem" }} />
                         {menu && <div className="menu_hover-top" onMouseLeave={() => setMenu(false)}><MoreMenu /></div>}
                     </span>
                 </li>
+
                 <li><Link to="/order-now"><button className="order_btn">Call to Order</button></Link></li>
                 <li><Link to="/clearance"><button className="clearance_btn">Clearance</button></Link></li>
             </ul>

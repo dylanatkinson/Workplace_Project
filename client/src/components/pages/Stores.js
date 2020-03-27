@@ -1,9 +1,10 @@
 import React from 'react';
+import GetStores from '../GetStores';
 
 const Stores = () => {
     return (
         <div>
-            <h1>Stores</h1>
+            <GetStores />
         </div>
     );
 };

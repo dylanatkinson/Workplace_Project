@@ -42,7 +42,7 @@ const Footer = () => {
                 <h3 className="footer_list-title">Contact us</h3>
                 <ul>
                     <li>Call us 7 days a week to chat about sofas or place an order</li>
-                    <li>03444 818181</li>
+                    <li><span className="order_call-emphasis">03444 818181</span></li>
                 </ul>
             </div>
 
