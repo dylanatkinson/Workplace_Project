@@ -4,11 +4,11 @@ import { Link } from 'react-router-dom';
 import SofologyLogo from './images/Sofology-Logo-Standard.png';
 
 import MoreMenu from './MoreMenu';
+import NavSearch from './NavSearch';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faShoppingBasket } from '@fortawesome/free-solid-svg-icons';
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons';
-import { faSearch } from '@fortawesome/free-solid-svg-icons';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons';
 
 const Navigation = (props) => {
@@ -36,7 +36,7 @@ const Navigation = (props) => {
             <ul>
                 <Link to="/"><img src={SofologyLogo} alt="Sofology Logo" style={{ margin: "1vw 0 1vw 0" }} /></Link>
                 {/* need to use this input to search the database for matching items */}
-                <li><input type="text" placeholder="Find the sofa you love..." /><Link to="/browser"><button className="search_icon"><FontAwesomeIcon icon={faSearch} /></button></Link></li>
+                <li><NavSearch /></li>
                 <li><Link to="/stores">Find a Store</Link></li>
                 <li><Link to="/responsibility">Responsibility</Link></li>
 

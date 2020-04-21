@@ -347,6 +347,10 @@ footer ul {
     font-weight: 200;
 }
 
+.shop_sofas-slideable::-webkit-scrollbar {
+    display: none;
+}
+
 .shop_sofas-header {
     margin-top: 3vh;
     text-align: center;

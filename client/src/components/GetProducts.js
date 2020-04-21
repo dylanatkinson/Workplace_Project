@@ -20,12 +20,14 @@ class GetProducts extends Component {
             })
             .catch(err => {
                 console.log(err);
-            })
-    };
+            });
 
+        };
+        
     productsList = () => {
         return this.state.products.map(product => {
             return <Product key={product._id} product={product} addToBasket={this.props.addToBasket} />
+            
         });
     };
 
